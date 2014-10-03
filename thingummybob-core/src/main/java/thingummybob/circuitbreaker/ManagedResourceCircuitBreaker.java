@@ -31,7 +31,7 @@ public class ManagedResourceCircuitBreaker extends AbstractCircuitBreaker<Manage
             try {
               resource.initialize();
               if (resource.isDisconnected()) {
-                throw new ResourceUnavailableException();
+                throw new ResourceUnavailableException("Resource not available immediately after initialization.");
               }
             } catch (Exception e) {
               throw new ResourceUnavailableException(e);
@@ -41,7 +41,7 @@ public class ManagedResourceCircuitBreaker extends AbstractCircuitBreaker<Manage
           this.close();
           return val;
         }
-        throw new ResourceUnavailableException();
+        throw new ResourceUnavailableException("Circuit breaker is open due to previous failure");
       }
       return method.invoke(proxiedInstance, arguments);
     } catch (InvocationTargetException e) {

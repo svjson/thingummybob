@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>se.patternjuggler.thingummybob</groupId>
 	<artifactId>thingummybob</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<name>Thing-Ummy-Bob Master</name>
 	<packaging>pom</packaging>
 

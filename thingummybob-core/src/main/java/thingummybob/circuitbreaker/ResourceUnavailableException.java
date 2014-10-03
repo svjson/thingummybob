@@ -6,6 +6,10 @@ public class ResourceUnavailableException extends RuntimeException {
 
   public ResourceUnavailableException() {
   }
+  
+  public ResourceUnavailableException(String message) {
+    super(message);
+  }
 
   public ResourceUnavailableException(Throwable cause) {
     super(cause);

@@ -3,7 +3,7 @@
   <parent>
     <artifactId>thingummybob</artifactId>
     <groupId>se.patternjuggler.thingummybob</groupId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>thingummybob-core</artifactId>
